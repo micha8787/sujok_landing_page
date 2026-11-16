@@ -277,26 +277,33 @@ a {
 
 .method-mark {
   display: block;
-  width: clamp(4.5rem, 12vw, 6rem);
+  width: clamp(3.75rem, 10vw, 5.25rem);
   height: auto;
   margin: 0 0 1.35rem;
-  opacity: 0.9;
 }
 
 .method-mark__hand {
-  fill: none;
-  stroke: color-mix(in srgb, var(--accent-deep) 55%, var(--stone));
-  stroke-width: 2.4;
+  fill: color-mix(in srgb, var(--accent) 8%, transparent);
+  stroke: var(--accent-deep);
+  stroke-width: 2.2;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .method-mark__dot {
-  fill: color-mix(in srgb, var(--accent) 55%, var(--ink-soft));
+  fill: var(--accent);
 }
 
 .method-mark__dot--accent {
-  fill: var(--accent);
+  fill: var(--accent-deep);
+}
+
+.method-mark__needle {
+  fill: none;
+  stroke: var(--accent-deep);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .section--method {
